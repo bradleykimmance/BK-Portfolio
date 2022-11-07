@@ -1,0 +1,10 @@
+npm i @emailjs/browser // EmailJS sends emails using client-side, used for contact form
+npm i @fortawesome/free-brands-svg-icons // brands icons free
+npm i @fortawesome/free-solid-svg-icons // solid icons free
+npm i @fortawesome/react-fontawesome // helps fontawesome work with react
+npm i animate.css // ready-to-use cross-browser animations
+npm i gsap-trial // greensock animation platform
+npm i loaders.css // Loading icons etc
+npm i react-loaders // animated react loaders
+npm i react-router-dom // react routing for multiple pages
+npm i sass // css extension
