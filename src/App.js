@@ -1,8 +1,14 @@
 import './App.scss';
+import { Route, Routes } from 'react-router-dom'
+import Layout from './components/layout'
 
 function App() {
   return (
-      null
+      <>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+        </Routes>
+      </>
       )
 }
 
