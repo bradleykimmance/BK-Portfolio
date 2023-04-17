@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 
 const Home = () => {
+
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = "radley Kimmance".split("")
   const jobArray = "software developer.".split("")
@@ -12,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     let timeoutId = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000)
+    }, 3200)
     return () => {
       clearTimeout(timeoutId)
     }

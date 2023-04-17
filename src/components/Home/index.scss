@@ -1,5 +1,5 @@
 .home-page {
-  
+
   .text-zone {
     position: absolute;
     left: 10%;
@@ -10,25 +10,26 @@
   }
   h1 {
     color: #fff;
-    font-size: 53px;
+    font-size: 56px;
+    line-height: 53px;
     margin: 0;
-    font-family: 'Coolvetica';
+    font-family: 'Coolvetica', sans-serif;
     font-weight: 400;
 
     &::before {
       content: '<h1>';
-      font-family: 'La Belle Aurore';
+      font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
       font-size: 18px;
       position: absolute;
       margin-top: -40px;
-      left: 15px;
+      left: -15px;
       opacity: 0.6;
     }
 
     &::after {
       content: '<h1/>';
-      font-family: 'La Belle Aurore';
+      font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
       font-size: 18px;
       position: absolute;
@@ -44,7 +45,7 @@
       opacity: 0;
       height: auto;
       animation: rotateIn 1s linear both;
-      animation-delay: .75s;
+      animation-delay: 1.4s;
     }
   }
 
