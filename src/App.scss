@@ -19,6 +19,10 @@ textarea {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
+.loader-hidden {
+  display: none;
+}
+
 .loader-active {
   display: block;
   position: absolute;

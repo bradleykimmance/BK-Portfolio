@@ -31,16 +31,16 @@ const About = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Tristique sollicitudin nibh sit amet commodo nulla. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar.
-            Est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor massa. Ipsum a arcu cursus vitae congue mauris rhoncus.
-            Malesuada proin libero nunc consequat interdum.
+            I started off my interest in computing from an early age, taking apart my computer towers, laptops and games consoles to just see how they all fit together.
+            Xbox 360 Red Ring of Death was a fond memory of mine, replacing thermal paste and tinkering with components to keep my xbox functioning for as long
+            as I could. Although I think that even Microsoft couldn't defeat that phenomenon.
           </p>
           <p>
-            Maecenas accumsan lacus vel facilisis volutpat. Est ullamcorper eget nulla facilisi.
-            Pretium aenean pharetra magna ac placerat. Scelerisque varius morbi enim nunc. Sapien eget mi proin sed libero enim sed faucibus turpis.
-            Integer feugiat scelerisque varius morbi enim. Risus in hendrerit gravida rutrum. Aliquet enim tortor at auctor urna nunc.
-            Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus.
+            I studied to become a Master of Engineering in Computer Science at the University of Hertfordshire between the years of 2014-2018. My final year Dissertation
+            consisted of the development and implementation of a Sales and Invoice management system that I then went on to use for my job at a Video Games Distribution
+            Company. It was developed using the M*EAN stack, this gave me an extensive knowledge into many areas of web development. I made an in-depth SQL database
+            that was controlled by a NodeJS frontend, allowing for real-time updating of stock levels and sales. I then further developed upon this database to
+            design one to work with an API that would send stock into the database for sending out directly to the customer.
           </p>
           <p>
             Mauris commodo quis imperdiet massa. Facilisis leo vel fringilla est.
