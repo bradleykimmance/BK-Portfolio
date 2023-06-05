@@ -2,8 +2,10 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGitAlt, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import { faCss3, faGitAlt, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
+import SqlDatabase from '../../assets/images/SQL-database.png'
+import FsLightbox from 'fslightbox-react';
 
 const About = () => {
 
@@ -18,6 +20,8 @@ const About = () => {
       clearTimeout(timeoutId)
     }
   }, [])
+
+  const [toggler, setToggler] = useState(false);
 
   return(
     <>
@@ -42,6 +46,20 @@ const About = () => {
             that was controlled by a NodeJS frontend, allowing for real-time updating of stock levels and sales. I then further developed upon this database to
             design one to work with an API that would send stock into the database for sending out directly to the customer.
           </p>
+          <>
+            <button onClick={() => setToggler(!toggler)}>
+              Toggle Lightbox
+            </button>
+            <FsLightbox
+              toggler={toggler}
+              sources={[
+                'https://i.imgur.com/fsyrScY.jpg',
+                'https://www.youtube.com/watch?v=3nQNiWdeH2Q',
+                'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+              ]}
+            />
+          </>
+          <img className="aboutImages" src={SqlDatabase} alt="SQL Database" />
           <p>
             Mauris commodo quis imperdiet massa. Facilisis leo vel fringilla est.
             Amet nisl purus in mollis nunc sed id semper risus. Leo vel orci porta non pulvinar neque laoreet.

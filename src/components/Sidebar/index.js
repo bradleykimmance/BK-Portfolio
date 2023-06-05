@@ -4,8 +4,7 @@ import LogoB from '../../assets/images/logo-b.png'
 import LogoLower from '../../assets/images/logo-lower.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className='nav-bar'>
