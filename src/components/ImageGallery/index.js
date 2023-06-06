@@ -39,6 +39,7 @@ const ImageGallery = ({ images }) => {
   const handlers = useSwipeable({
     onSwipedLeft: () => nextImage(),
     onSwipedRight: () => prevImage(),
+    onSwipedDown: () => closeFullscreen(),
   });
 
   if (isOpen) {
