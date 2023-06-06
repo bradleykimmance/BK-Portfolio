@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
 import SqlDatabase from '../../assets/images/SQL-database.png'
-import FsLightbox from 'fslightbox-react';
+import ImageGallery from '../ImageGallery';
 
 const About = () => {
 
@@ -21,7 +21,11 @@ const About = () => {
     }
   }, [])
 
-  const [toggler, setToggler] = useState(false);
+  const images = [
+    { src: SqlDatabase },
+    { src: SqlDatabase },
+    { src: SqlDatabase },
+  ];
 
   return(
     <>
@@ -46,19 +50,7 @@ const About = () => {
             that was controlled by a NodeJS frontend, allowing for real-time updating of stock levels and sales. I then further developed upon this database to
             design one to work with an API that would send stock into the database for sending out directly to the customer.
           </p>
-          <>
-            <button onClick={() => setToggler(!toggler)}>
-              Toggle Lightbox
-            </button>
-            <FsLightbox
-              toggler={toggler}
-              sources={[
-                'https://i.imgur.com/fsyrScY.jpg',
-                'https://www.youtube.com/watch?v=3nQNiWdeH2Q',
-                'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
-              ]}
-            />
-          </>
+          <ImageGallery images={images} />
           <img className="aboutImages" src={SqlDatabase} alt="SQL Database" />
           <p>
             Mauris commodo quis imperdiet massa. Facilisis leo vel fringilla est.
