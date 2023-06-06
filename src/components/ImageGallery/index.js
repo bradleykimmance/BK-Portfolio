@@ -51,10 +51,10 @@ const ImageGallery = ({ images }) => {
             <img src={Back} alt="Back" />
           </button>
           <button className="next-btn" onClick={nextImage}>
-            <img src={Next} alt="Back" />
+            <img src={Next} alt="Next" />
           </button>
           <button className="close-btn" onClick={closeFullscreen}>
-            <img src={Exit} alt="Back" />
+            <img src={Exit} alt="Exit" />
           </button>
         </div>
       </div>,
