@@ -52,10 +52,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Tristique sollicitudin nibh sit amet commodo nulla. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar.
-            Est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor massa. Ipsum a arcu cursus vitae congue mauris rhoncus.
-            Malesuada proin libero nunc consequat interdum.
+            Please get in contact me with the form below!
           </p>
           <div className='contact-form'>
             <form ref={refForm} onSubmit={sendEmail}>

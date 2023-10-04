@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
 import SqlDatabase from '../../assets/images/SQL-database.png'
+import litestocksLogin from '../../assets/images/litestocks-login.png'
+import litestocksDashboard from '../../assets/images/litestocks-dashboard.png'
 import ImageGallery from '../ImageGallery';
 
 const About = () => {
@@ -22,8 +24,8 @@ const About = () => {
   }, [])
 
   const images = [
-    { src: SqlDatabase },
-    { src: SqlDatabase },
+    { src: litestocksLogin },
+    { src: litestocksDashboard },
     { src: SqlDatabase },
   ];
 
@@ -52,10 +54,8 @@ const About = () => {
           </p>
           <ImageGallery images={images} />
           <p>
-            Mauris commodo quis imperdiet massa. Facilisis leo vel fringilla est.
-            Amet nisl purus in mollis nunc sed id semper risus. Leo vel orci porta non pulvinar neque laoreet.
-            Duis at consectetur lorem donec massa. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi.
-            Ac felis donec et odio pellentesque diam volutpat.
+            I started working as a Software Engineer at Eckoh UK Limited January 2023, Eckoh specialise in Secure Payment Solutions with a heavy basis in Telephony.
+            Since being at Eckoh I have worked with React, TypeScript, HTML, CSS, JavaScript, YAML, JSON, regex, GIT, Kamailio, FreeSwitch and Nuance.
           </p>
         </div>
 
