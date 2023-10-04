@@ -1,6 +1,6 @@
 import './index.scss';
 import ReactDOM from 'react-dom';
-import React, { useState } from 'react';
+import React, { useState , useRef, useEffect } from 'react';
 import Back from '../../assets/images/chevrons-left.svg'
 import Next from '../../assets/images/chevrons-right.svg'
 import Exit from '../../assets/images/minimize-2.svg'
@@ -9,6 +9,7 @@ import { useSwipeable } from 'react-swipeable';
 const ImageGallery = ({ images }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
+  const imageRef = useRef(null);
 
   // Function for opening the gallery in fullscreen
   const openFullscreen = (index) => {
@@ -42,10 +43,24 @@ const ImageGallery = ({ images }) => {
     onSwipedDown: () => closeFullscreen(),
   });
 
+  // Handle outside click and close fullscreen
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (imageRef.current && !imageRef.current.contains(event.target)) {
+        closeFullscreen();
+      }
+    };
+    document.addEventListener('click', handleClickOutside, true);
+    return () => {
+      document.removeEventListener('click', handleClickOutside, true);
+    };
+  }, [ isOpen ]);
+
+  // If open, display full screen with buttons
   if (isOpen) {
     return ReactDOM.createPortal(
       <div className="fullscreen-window" {...handlers}>
-        <div className="fullscreen-content">
+        <div className="fullscreen-content" ref={imageRef}>
           <img src={images[currentImage].src} alt={`${currentImage + 1}`} className="fullscreen-image" />
           <button className="prev-btn" onClick={prevImage}>
             <img src={Back} alt="Back" />

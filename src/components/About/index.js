@@ -51,7 +51,6 @@ const About = () => {
             design one to work with an API that would send stock into the database for sending out directly to the customer.
           </p>
           <ImageGallery images={images} />
-          <img className="aboutImages" src={SqlDatabase} alt="SQL Database" />
           <p>
             Mauris commodo quis imperdiet massa. Facilisis leo vel fringilla est.
             Amet nisl purus in mollis nunc sed id semper risus. Leo vel orci porta non pulvinar neque laoreet.
