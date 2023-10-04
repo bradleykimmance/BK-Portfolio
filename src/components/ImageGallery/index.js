@@ -46,7 +46,7 @@ const ImageGallery = ({ images }) => {
     return ReactDOM.createPortal(
       <div className="fullscreen-window" {...handlers}>
         <div className="fullscreen-content">
-          <img src={images[currentImage].src} alt={`Image ${currentImage + 1}`} className="fullscreen-image" />
+          <img src={images[currentImage].src} alt={`${currentImage + 1}`} className="fullscreen-image" />
           <button className="prev-btn" onClick={prevImage}>
             <img src={Back} alt="Back" />
           </button>
@@ -65,7 +65,7 @@ const ImageGallery = ({ images }) => {
   return (
     <div className="gallery">
       {images.map((image, index) => (
-        <img key={index} src={image.src} alt={`Image ${index + 1}`} onClick={() => openFullscreen(index)} className="gallery-image" />
+        <img key={index} src={image.src} alt={`${index + 1}`} onClick={() => openFullscreen(index)} className="gallery-image" />
       ))}
     </div>
   );
