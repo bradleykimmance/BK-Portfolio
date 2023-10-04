@@ -9,6 +9,8 @@
   width: calc(33.33% - 20px);
   margin: 10px;
   cursor: pointer;
+  animation: pulse 1s;
+  animation-delay: 1.2s;
 }
 
 .fullscreen-window {
