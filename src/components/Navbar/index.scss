@@ -128,29 +128,39 @@
     position: relative;
     min-height: auto;
 
-    .logo {
-      padding: 16px 0;
-    }
-
     nav {
       display: none;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 1001;
+
+      a {
+        font-size: 22px;
+        color: #4d4d4e;
+        display: block;
+        height: auto;
+        position: relative;
+        text-decoration: none;
+      }
+
+      &.open {
+        display: block;
+        margin-top: 0;
+        top: auto;
+        background-color: #181818;
+        transform: translateX(0);
+        height: 100vh;
+        text-align: center;
+      }
     }
 
     ul {
       display:none;
     }
-    &.open {
-      width: 100%;
-    }
-    .logo.hidden {
-      display: none;
-    }
-    nav.open {
-      display: block;
-    }
+
     .toggle-button {
       position: absolute;
-      top: 16px;
+      top: 30px;
       left: 16px;
       z-index: 4;
       display: flex;

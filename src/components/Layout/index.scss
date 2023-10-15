@@ -114,3 +114,19 @@
     }
   }
 }
+
+@media (max-width: 1382px) {
+  .tags {
+    left: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tags {
+    bottom: 100px;
+    left: 30px;
+  }
+  .container {
+    top: 0;
+  }
+}
