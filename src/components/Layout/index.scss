@@ -123,10 +123,34 @@
 
 @media (max-width: 768px) {
   .tags {
-    bottom: 100px;
     left: 30px;
   }
   .container {
     top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    position: initial;
+    padding-top: 10px;
+  }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    &.contact-page,
+    &.about-page, {
+      .text-zone {
+        position: initial;
+        transform: none;
+        width: 100%;
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    }
   }
 }
