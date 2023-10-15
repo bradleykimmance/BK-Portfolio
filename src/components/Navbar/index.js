@@ -24,13 +24,13 @@ const Navbar = () => {
         <img className="sub-logo" src={LogoLower} alt="Bradley Kimmance" />
       </Link>
       <nav className={isNavbarOpen ? 'open' : ''}>
-        <NavLink exact="true" activeclassname="active" className="home-link" to="/" onClick={toggleNavbar}>
+        <NavLink exact="true" activeclassname="active" className="home-link" to="/" onClick={() => setNavbarOpen(false)}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={toggleNavbar}>
+        <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={() => setNavbarOpen(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={toggleNavbar}>
+        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={() => setNavbarOpen(false)}>
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
