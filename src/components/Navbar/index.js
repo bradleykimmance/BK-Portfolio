@@ -7,34 +7,34 @@ import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 
-const Sidebar = () => {
+const Navbar = () => {
 
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const toggleSidebar = () => {
-    setSidebarOpen(!isSidebarOpen);
+  const [isNavbarOpen, setNavbarOpen] = useState(false);
+  const toggleNavbar = () => {
+    setNavbarOpen(!isNavbarOpen);
   };
 
   return (
-    <div className={`nav-bar ${isSidebarOpen ? 'open' : ''}`}>
-      <button className={`toggle-button ${isSidebarOpen ? 'open' : ''}`} onClick={toggleSidebar}>
+    <div className={`nav-bar ${isNavbarOpen ? 'open' : ''}`}>
+      <button className={`toggle-button ${isNavbarOpen ? 'open' : ''}`} onClick={toggleNavbar}>
         <div className="hamburger"></div>
       </button>
-      <Link className={`logo ${isSidebarOpen ? 'hidden' : ''}`} to="/">
+      <Link className="logo" to="/">
         <img src={LogoB} alt="logo" />
         <img className="sub-logo" src={LogoLower} alt="Bradley Kimmance" />
       </Link>
-      <nav className={isSidebarOpen ? 'open' : ''}>
-        <NavLink exact="true" activeclassname="active" to="/">
+      <nav className={isNavbarOpen ? 'open' : ''}>
+        <NavLink exact="true" activeclassname="active" className="home-link" to="/" onClick={toggleNavbar}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+        <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={toggleNavbar}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={toggleNavbar}>
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
-      <ul>
+      <ul className={isNavbarOpen ? 'open' : ''}>
         <li>
           <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bradleykimmance/">
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
@@ -50,4 +50,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Navbar;
