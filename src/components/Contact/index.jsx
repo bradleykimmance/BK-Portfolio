@@ -98,7 +98,7 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
-      <Loader type="ball-pulse" />
+      <Loader type="ball-pulse"  active/>
     </>
   )
 }
