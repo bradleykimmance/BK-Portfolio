@@ -3,7 +3,7 @@
   .text-zone {
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 45vh;
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
@@ -80,10 +80,6 @@
   }
   @media (max-width: 1536px) {
     .text-zone {
-      position: absolute;
-      left: 10%;
-      top: 50%;
-      transform: translateY(-50%);
       width: 90%;
     }
   }

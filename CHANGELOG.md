@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.1] - 2023-10-17
+
+### Fixed
+
+- Further improved responsiveness
+
+## [1.1.0] - 2023-10-17
+
+### Changed
+
+- Migrated from Create React App to Vite
+
 ## [1.0.8] - 2023-10-15
 
 ### Fixed
