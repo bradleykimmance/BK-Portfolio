@@ -128,11 +128,24 @@
     position: relative;
     min-height: auto;
 
+    .sub-logo {
+      width: 35px !important;
+    }
+    .main-logo {
+      width: 12px !important;
+    }
     nav {
-      display: none;
-      transform: translateX(100%);
-      transition: transform 0.3s ease;
+      display: block;
       z-index: 1001;
+      left: 100%;
+      top: auto;
+      opacity: 0;
+      height: 100vh;
+      text-align: center;
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out;
+      margin-top: 0;
+      background-color: #181818;
 
       a {
         font-size: 22px;
@@ -144,13 +157,8 @@
       }
 
       &.open {
-        display: block;
-        margin-top: 0;
-        top: auto;
-        background-color: #181818;
-        transform: translateX(0);
-        height: 100vh;
-        text-align: center;
+        left: 0;
+        opacity: 1;
       }
     }
 
@@ -160,13 +168,14 @@
 
     .toggle-button {
       position: absolute;
-      top: 30px;
+      top: 30%;
       left: 16px;
       z-index: 4;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       padding: 8px;
+      cursor: pointer;
 
       .hamburger {
         width: 24px;
