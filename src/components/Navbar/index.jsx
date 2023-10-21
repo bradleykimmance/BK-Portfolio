@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="hamburger"></div>
       </button>
       <Link className="logo" to="/">
-        <img src={LogoB} alt="logo" />
+        <img className="main-logo" src={LogoB} alt="logo" />
         <img className="sub-logo" src={LogoLower} alt="Bradley Kimmance" />
       </Link>
       <nav className={isNavbarOpen ? 'open' : ''}>
