@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Fix navbar transitions and responsiveness
 - Make navbar smaller on smaller devices
+- Sort out scrolling on smaller devices
 
 ## [1.1.1] - 2023-10-17
 

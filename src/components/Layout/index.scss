@@ -2,11 +2,10 @@
   width: 100%;
   height: 100vh;
   position: absolute;
-  overflow-y: scroll;
 }
 
 .top-tags {
-  bottom: auto;
+  bottom: auto !important;
   top: 35px;
 }
 
@@ -130,6 +129,10 @@
 
   .tags {
     left: 30px;
+  }
+  .bottom-tags {
+    float:left;
+    margin-top: 22px;
   }
   .top-tags {
     top: 95px;
