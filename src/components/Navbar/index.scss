@@ -135,7 +135,7 @@
       width: 12px !important;
     }
     nav {
-      display: block;
+      display: none;
       z-index: 1001;
       left: 100%;
       top: auto;
@@ -157,6 +157,7 @@
       }
 
       &.open {
+        display: block;
         left: 0;
         opacity: 1;
       }

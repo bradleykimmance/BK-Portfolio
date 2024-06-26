@@ -119,23 +119,31 @@
   .tags {
     left: 90px;
   }
+  .top-tags {
+    left: 70px;
+    top: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .page {
     position: initial;
     padding-top: 10px;
+    overflow-y: auto;
   }
 
   .tags {
     left: 30px;
+    position: relative;
   }
   .bottom-tags {
     float:left;
     margin-top: 22px;
+    position: relative;
   }
   .top-tags {
-    top: 95px;
+    top: 5px;
+    left: 10px;
   }
 
   .container {

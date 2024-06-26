@@ -20,6 +20,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        overflow-y: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 }
